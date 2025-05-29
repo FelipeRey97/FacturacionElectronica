@@ -1,0 +1,95 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Cambio de fuente a Comic Sans */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+  background-color: #f4f4f4; /* Color de fondo por defecto */
+}
+
+.initial-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url("fondo.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la página */
+  text-align: center;
+  background-image: url("fondo2.jpg"); /* Imagen de fondo para la segunda pantalla */
+  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+h1 {
+  font-size: 4em; /* Tamaño de letra más grande */
+  color: #ffffff; /* Color blanco para mejor contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
+  margin-bottom: 20px; /* Espacio entre el título y el botón */
+}
+
+button {
+  margin-top: 20px; /* Espacio entre los campos y el botón */
+  padding: 10px 20px; /* Más espacio en los lados */
+  background-color: #338dff; /* Color del botón cambiado */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto; /* Cambia a auto para que el botón sea más corto */
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.5em; /* Aumentar el tamaño del texto del botón */
+  display: block;
+  margin: 30px auto;
+}
+
+button:hover {
+  background-color: #2a74cc; /* Color al pasar el ratón (opcional) */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff; /* Cambiar el color a blanco */
+}
+
+input {
+  width: 300px; /* Ajustar el ancho de las líneas de entrada */
+  padding: 10px; /* Aumentar el padding para mayor comodidad */
+  margin-top: 5px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+#invoice-output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  background: #e9f5ff;
+}
