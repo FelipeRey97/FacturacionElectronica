@@ -1,0 +1,103 @@
+@import '../base/variables.css';
+
+.RegisterFormSection{
+
+    background-image:  url('/public/images/RegisterBackground.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.RegisterFormSection h2{
+    background-color: var(--White_Difuminated);
+    margin: 0.8rem 0.8rem 0 0.8rem;
+    width: auto;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--secondary_color);
+}
+
+.RegisterForm{
+
+    margin: 0 auto;
+    width: auto;
+    margin: 0 0.8rem 0.8rem 0.8rem;
+    background-color: var(--White_Difuminated);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.RegisterForm label{
+
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.RegisterForm input{
+
+    background-color: var(--primary_color);
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    transition: border ease 0.05s;
+    
+}
+
+.RegisterForm input:focus{
+
+    border: 3px solid var(--secondary_color);
+}
+
+.RegisterForm button{
+
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary_color);
+    border-radius: 0.2rem;
+    color: var(--primary_color);
+    cursor: pointer;
+    transition: color ease 0.3s, background-color ease 0.3s, font-weight ease 0.3s, border ease 0.1s;
+}
+
+.RegisterForm button:hover,
+.RegisterForm button:focus{
+
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    font-weight: 600;
+    border: 3px solid var(--secondary_color);
+    outline: none;
+
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 720px) {
+
+    .RegisterFormSection{
+
+        justify-content: center;
+    }
+    
+    .RegisterFormSection h2,
+    .RegisterForm{
+
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .RegisterForm label{
+
+        font-size: 1.2rem;
+        
+    }
+
+}

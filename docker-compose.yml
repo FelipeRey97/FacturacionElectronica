@@ -1,0 +1,26 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    command: ["sh", "-c", "php artisan migrate --force && apache2-foreground"]
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: Sps4_210997
+      MYSQL_DATABASE: facturacionelectronica
+    ports:
+      - "3305:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
