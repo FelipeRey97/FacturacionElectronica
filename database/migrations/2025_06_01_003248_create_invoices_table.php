@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
 
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('client_name');
             $table->string('client_document');
-            $table->date('issue_date')->default(now());
             $table->decimal('subtotal', 10, 2); // suma de todos los items sin impuestos
             $table->decimal('tax_total', 10, 2); // suma del impuesto total
             $table->decimal('total', 10, 2); // subtotal + impuesto
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('store_Name');
             $table->timestamps();
             });
 
