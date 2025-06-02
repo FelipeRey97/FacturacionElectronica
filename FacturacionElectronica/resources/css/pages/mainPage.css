@@ -1,0 +1,122 @@
+@import '../base/variables.css';
+
+.dashboard{
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.dashboardMenu{
+    flex: 1;
+    background-color: var(--secondary_color);
+    text-align: center;
+    
+}
+
+.dashboardMenu p{
+
+    margin: 2rem 0 5rem 0;
+    padding: 1rem;
+    color: var(--primary_color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.dashboardMenu a{
+
+    display: block;
+    text-decoration: none;
+    color: var(--primary_color);
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--primary_color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboardMenu a:hover{
+
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+}
+
+.dashboardMenu a:first-of-type{
+
+     border-top: 1px solid var(--primary_color);
+}
+
+.dashboardView{
+    
+    padding: 2rem;
+    flex: 6;
+    background-color: var(--White_Difuminated);
+    min-height: 100vh;
+}
+
+.dashboardView h1{
+
+    margin: 2rem 0rem;
+    font-size: 2rem;
+}
+
+.dashboardView table{
+
+    width: 100%;
+}
+
+.dashboardView table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+.pdf{
+
+    color: var(--primary_color);
+    background-color: var(--PDF_Color) ;
+    border: none;
+    text-align: center;
+    padding: 0.3rem;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid var(--primary_color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pdf:hover{
+
+    color: var(--PDF_Color);
+    background-color: var(--primary_color) ;
+    border: 1px solid var(--PDF_Color);
+}
+
+.Detail{
+
+    color: var(--primary_color);
+    background-color: var(--secondary_color);
+    border: none;
+    text-align: center;
+    padding: 0.3rem;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid var(--primary_color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Detail:hover{
+
+    color: var(--secondary_color);
+    background-color: var(--primary_color) ;
+    border: 1px solid var(--secondary_color);
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 720px){
+
+    .dashboard{
+
+        flex-direction: row;
+    }
+}

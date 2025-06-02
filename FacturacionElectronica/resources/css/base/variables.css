@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+
+    /* Colors */
+    --primary_color: #fff;
+    --secondary_color: #003561;
+    --lightgray: #b6b6b6;
+    --White_Difuminated: hsla(0, 0%, 100%, 0.788);
+
+    /* Fonts */
+    --primary_font:  "Montserrat", sans-serif;
+    --secondary_font: "Open Sans", sans-serif;
+    --PDF_Color: #fc3535d8;
+}
